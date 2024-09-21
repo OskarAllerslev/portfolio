@@ -1,7 +1,15 @@
 # Oskar Allerslev Christiansen
 
-<img src="assets/face.jpg" alt="Profile Picture" width="150" height="150" style="border-radius: 50%;">
-
+<div style="display: flex; align-items: center;">
+  
+  <!-- Image positioned to the left with proper scaling -->
+  <img src="assets/face.jpg" alt="Profile Picture" style="width: 200px; max-width: 100%; height: auto; border-radius: 10%; margin-right: 20px;">
+  
+  <!-- Personal introduction and content on the right side of the image -->
+  <div>
+    A collection of my work. Not anything super extensive, but fun little projects.
+  </div>
+</div>
 **Location:** Copenhagen  
 **Email:** [Oskar.m1660@gmail.com](mailto:Oskar.m1660@gmail.com)  
 **Phone:** +45 20200679  
