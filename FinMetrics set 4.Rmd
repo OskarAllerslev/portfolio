@@ -1,0 +1,267 @@
+---
+title: "Forecasting FinMetrics"
+author: "Oskar Allerslev"
+date: "2024-09-21"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+suppose that data follows a stationary AR(1) model on the form 
+
+$x_t = \mu + \rho x_{t-1}+\epsilon_t, \hspace{0,35cm} t\geq 1$
+
+With $\epsilon$ iid $\mathcal{N}(0,\sigma^2), \sigma^2 > 0$.
+
+1. Provide an expression for $E(X_{T+h} \mid \mathcal{F}_t)$ as a function of $x_T$ and the parameters of the model. Also show $x_{T+h} \mid X_{t} \overset{p}{\rightarrow} E(x_t)$ as $h \rightarrow \infty$
+
+$$
+\begin{align*}
+E(x_{T+h} \mid \mathcal{F}_T) &= E(\mu + \rho x_{T}+\epsilon_{T+h} \mid \mathcal{F}_T) \\
+&=\mu + \rho x_{T} + E(\epsilon_{T+h})\\
+&=\mu +\rho(\mu + \rho x_{T+1}) \\
+&= \dots \\
+&=\mu \sum_{i=0}^{h-1}\rho^i + \rho^h x_T
+\end{align*}
+$$
+
+we utilize that $\rho^h x_{T}$ tends to zero as $h \rightarrow \infty$ since $\mid \rho \mid < 1$ given that data is a stationary time series.
+$$
+\begin{align*}
+E(x_{T+h} \mid \mathcal{F}_T) =\mu \sum_{i=0}^{h-1} \rho^i= \mu\frac{1-\rho^h}{1-\rho} \overset{h \rightarrow \infty}{=} \frac{\mu}{1-\rho} = E(x_t^*) 
+\end{align*}
+$$
+for a stationary series. 
+
+2. Make a simulation and plot the points $(t, x_t \mid x_{T})$ for appropriate values for the model parameters. 
+
+```{r}
+
+library(ggplot2)
+
+mu <- 0.2
+rho <- 0.9
+sigma <- 1
+T <- 1000
+h <- 100
+
+
+x <- numeric(T+h)
+x[1] <- 0
+
+set.seed(1)
+epsilon <- rnorm(T+h, mean = 0, sd = sigma)
+for (t in 2:(T+h)){
+  x[t] <- mu + rho *x[t-1]+epsilon[t]
+}
+
+long_term_mean <- mu/(1-rho)
+
+data <- data.frame(Time = 1:(T+h),x = x)
+
+
+ggplot(data, aes(x = Time, y = x)) +
+  geom_line(color = "blue") +
+  geom_hline(yintercept = long_term_mean, linetype = "dashed", color = "red") +
+  labs(title = "Simulated AR(1) Series",
+       x = "Time (t)", y = "x_t") +
+  theme_minimal() +
+  annotate("text", x = T + 5, y = long_term_mean, label = sprintf("Long-term Mean = %.2f", long_term_mean), 
+           color = "red", hjust = 1)
+
+```
+which is consistent with our convergence result.
+
+
+
+3. Consider the forecast error $\epsilon_{t+h\mid T} = x_{t+h}-x_{T+h\mid T}$. Show 
+
+$$
+\begin{align*}
+\epsilon_{T+h\mid T} \sim \mathcal{N}(0,\sigma_h^2)
+\end{align*}
+$$
+We start by finding an expression for the above 
+
+$$
+\begin{align*}
+\epsilon_{t+h\mid T} &= x_{T+h}- x_{T+h\mid T}\\
+&= \mu \sum_{i=0}^{h-1} \rho^i +\rho^h x_T +\sum_{j=0}^{h-1}\rho^j \epsilon_{T+h-j}-\left( \mu \sum_{i=0}^{h-1} \rho^i +\rho^h x_T \right)\\
+&=\sum_{j=0}^{h-1} \rho^j \epsilon_{T+h-j}
+\end{align*}
+$$
+Which is a scaled sum of iid $\mathcal{N}(0,\sigma^2)$. Hence
+$$
+\begin{align*}
+E(\epsilon_{t+h\mid T})&=E\left( \sum_{j=0}^{n-1} \rho^{j} \epsilon_{T+h-j} \right)=0\\
+E(\epsilon_{t+h\mid T})&=E\left( \sum_{j=0}^{n-1} \rho^{2j}\epsilon_{T+h-j}^2 \right)=\sigma^2 \sum_{j=0}^{h-1}\rho^{2j}=\sigma^2 \frac{1-\rho^{2h}}{1-\rho^2}
+\end{align*}
+$$
+
+hence we achieve the desired result and find an expression for the variance of the forecast error.
+
+4. Show $\lim_{h\rightarrow \infty} \sigma_h^2 = V(x_t^*)$ and add confidence bands to the plot.
+
+$$
+\begin{align*}
+\sigma^2 \frac{1-\rho^{2h}}{1-\rho^2} \overset{h\rightarrow \infty}{=} \frac{\sigma^2}{1-\rho^2}= V(x_t^*)
+\end{align*}
+$$
+We can then choose some arbitrary parameters but remember to keep $\mid \rho \mid < 1$ since that is the requirement for stationarity in the AR(1) setting.
+```{r}
+library(ggplot2)
+
+mu <- 0.2
+rho <- 0.9
+sigma <- 1.0
+T <- 1000
+h <- 100
+
+x <- numeric(T + h)
+x[1] <- mu / (1 - rho)
+
+set.seed(1)
+epsilon <- rnorm(T + h, mean = 0, sd = sigma)
+for (t in 2:(T + h)) {
+  x[t] <- mu + rho * x[t - 1] + epsilon[t]
+}
+
+forecast_values <- numeric(h)
+lower_bound <- numeric(h)
+upper_bound <- numeric(h)
+z_alpha <- 1.96
+
+for (j in 1:h) {
+  forecast_values[j] <- mu * (1 - rho^j) / (1 - rho) + rho^j * x[T]
+  sigma_h <- sigma * sqrt((1 - rho^(2 * j)) / (1 - rho^2))
+  lower_bound[j] <- forecast_values[j] - z_alpha * sigma_h
+  upper_bound[j] <- forecast_values[j] + z_alpha * sigma_h
+}
+
+forecast_df <- data.frame(
+  Time = (T + 1):(T + h),
+  Forecast = forecast_values,
+  Lower = lower_bound,
+  Upper = upper_bound
+)
+
+data <- data.frame(Time = 1:(T + h), x = x)
+
+ggplot(data, aes(x = Time, y = x)) +
+  geom_line(color = "blue") +
+  geom_line(data = forecast_df, aes(x = Time, y = Forecast), color = "red", linetype = "dashed") +
+  geom_ribbon(data = forecast_df, aes(x = Time, ymin = Lower, ymax = Upper),
+              fill = "gray", alpha = 0.3, inherit.aes = FALSE) +
+  geom_hline(yintercept = mu / (1 - rho), linetype = "dashed", color = "black") +
+  labs(title = "Simulated AR(1) Series with Forecast and Confidence Intervals",
+       x = "Time (t)", y = expression(x[t])) +
+  theme_minimal()
+
+
+```
+
+5. Try to evaluate how one could use this in practice
+
+One could get some real observed data
+```{r}
+library(quantmod)
+
+start <- as.Date("2023-01-01")
+end <- as.Date("2024-09-21")
+
+ticker <- "F"
+observed_data <- data.frame(getSymbols(Symbols = ticker, src = "yahoo", start = start, end = end, auto.assign = FALSE))
+head(observed_data)
+
+F_data <- diff(log(observed_data$F.Adjusted))
+
+```
+
+next we fit our model to the observed data. 
+```{r}
+library(tseries)
+
+adf_test_result <- adf.test(F_data)
+print(adf_test_result)
+
+```
+
+
+```{r}
+library(forecast)
+
+best_par <- auto.arima(F_data)
+print(best_par)
+ar_model <- Arima(F_data, order = c(3,0,0), include.mean = TRUE)
+
+
+
+```
+
+generate a forecast and view it.
+
+```{r}
+h <- 30
+
+forecast_returns <- forecast(ar_model, h = h)
+
+print(forecast_returns)
+```
+```{r}
+forecast_values <- forecast_returns$mean
+lower_bound <- forecast_returns$lower[,2]  
+upper_bound <- forecast_returns$upper[,2]  
+
+last_observed_price <- tail(observed_data$F.Adjusted, 1)
+
+forecast_prices <- last_observed_price * exp(cumsum(forecast_values))
+lower_prices <- last_observed_price * exp(cumsum(lower_bound))
+upper_prices <- last_observed_price * exp(cumsum(upper_bound))
+
+forecast_df <- data.frame(
+  Time = seq_along(forecast_prices) + length(F_data),
+  Forecast = forecast_prices,
+  Lower = lower_prices,
+  Upper = upper_prices
+)
+
+observed_prices <- observed_data$F.Adjusted[(nrow(observed_data) - 59):nrow(observed_data)]
+data_observed <- data.frame(Time = (length(F_data) - 59):length(F_data), 
+                            Observed = observed_prices)
+
+ggplot(data_observed, aes(x = Time, y = Observed)) +
+  geom_line(color = "blue") +
+  geom_line(data = forecast_df, aes(x = Time, y = Forecast), color = "red", linetype = "dashed") +
+  geom_ribbon(data = forecast_df, aes(x = Time, ymin = Lower, ymax = Upper),
+              fill = "gray", alpha = 0.3, inherit.aes = FALSE) +
+  labs(title = "Forecast with Confidence Intervals on Ford Stock Prices (Last 60 Days)",
+       x = "Time (t)", y = "Adjusted Close Price") +
+  theme_minimal()
+
+```
+
+This prediction is not very good. We see our CI increase exponentially over time. One could perform extensive model diagnostics to find better model. 
+
+```{r}
+checkresiduals(ar_model)
+
+```
+
+The residuals exhibit heavy tails, meaning extreme values occur more frequently than expected under a normal distribution.
+
+The residuals display periods where high values are clustered together, and periods where low values are clustered together. This suggests volatility clustering, a common phenomenon in financial time series where periods of high volatility are followed by high volatility, and periods of low volatility are followed by low volatility.
+
+
+
+
+
+
+
+
+
+
