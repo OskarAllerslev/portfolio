@@ -1,6 +1,6 @@
 # Oskar Allerslev Christiansen
 
-
+<img src="assets/face.jpg" alt="Profile Picture" width="150" height="150" style="border-radius: 50%;">
 
 **Location:** Copenhagen  
 **Email:** [Oskar.m1660@gmail.com](mailto:Oskar.m1660@gmail.com)  
