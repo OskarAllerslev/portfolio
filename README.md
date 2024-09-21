@@ -1,6 +1,6 @@
 # Oskar Allerslev Christiansen
 
-![Profile Picture](./assets/face.jpg)
+![Profile Picture](https://github.com/OskarAllerslev/portfolio/assets/face.jpg)
 
 **Location:** Copenhagen  
 **Email:** [Oskar.m1660@gmail.com](mailto:Oskar.m1660@gmail.com)  
