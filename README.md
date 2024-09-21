@@ -4,73 +4,119 @@
 **Email:** [Oskar.m1660@gmail.com](mailto:Oskar.m1660@gmail.com)  
 **Phone:** +45 20200679  
 
-## Bachelor in Actuarial Mathematics
+---
 
-I am a third-year bachelor student at the University of Copenhagen, specializing in Actuarial Mathematics. My academic focus includes topics like insurance, financial econometrics, statistical methods, and advanced mathematical analysis. I am also actively involved in applying these concepts to real-world financial projects.
+## Projects
+
+- [**Financial Econometrics Project**](https://rpubs.com/OskarAllerslev/1223102): An in-depth analysis using AR(1) processes for forecasting, demonstrating advanced skills in time series analysis and statistical modeling.
+
+- [**Python Assignment - Markov Models in Finance**](https://github.com/OskarAllerslev/Markov-Models-in-Finance): A comprehensive university assignment implementing advanced Markov models in Python, showcasing mathematical proficiency and programming skills applied to financial contexts.
+
+- [**GitHub Repositories**](https://github.com/OskarAllerslev): Explore my GitHub repositories for additional projects and code samples.
+
+---
+
+## Professional Summary
+
+I am a highly motivated third-year Bachelor student at the **University of Copenhagen**, specializing in **Actuarial Mathematics**. With a strong foundation in advanced mathematics and statistics, I am passionate about applying mathematical concepts to solve complex financial problems. My eagerness to learn coding and leverage programming languages like Python and R in finance drives me to continually expand my skill set. I excel in quantitative analysis, statistical modeling, and have a keen interest in algorithmic trading and financial econometrics.
+
+---
 
 ### Education
 
-#### University of Copenhagen (2022 - 2025)
-**Bachelor’s in Actuarial Mathematics**  
-- **Coursework:**
-  - Insurance and Insurance-law
-  - Linear Algebra
-  - Real- and Complex Analysis
-  - Introduction to Numerical Analysis
-  - Statistical Methods & Mathematical Statistics
-  - Probability with a Foundation in Measure Theory (Markov Chains, Martingales, and Stochastic Processes)
-  - Mathematical Statistics
-  - Non-life Insurance
+#### **University of Copenhagen** (2022 - 2025)
+**Bachelor’s in Actuarial Mathematics**
+
+- **Coursework Highlights:**
+  - **Advanced Mathematics and Analysis:** Deep understanding of Real and Complex Analysis, Linear Algebra, and Numerical Analysis.
+  - **Statistical Methods:** Proficient in Statistical Methods, Mathematical Statistics, and Probability with Measure Theory, covering topics like Markov Chains, Martingales, and Stochastic Processes.
+  - **Financial and Insurance Studies:** Knowledgeable in Non-life Insurance, Insurance Law, and currently studying Finance and Financial Econometric Time Series Modeling (Graduate Course).
 
 - **Current Courses (Sept - Nov 2024):**
-  - Financial Econometric Time Series Modeling (Graduate Course)
-  - Regression
-  - Finance
+  - **Financial Econometric Time Series Modeling (Graduate Course):** Engaging in advanced time series analysis and econometric modeling.
+  - **Regression Analysis:** Applying statistical models to predict and interpret data.
+  - **Finance:** Studying financial markets, instruments, and investment strategies.
 
-- **Future Courses:**
-  - Life Insurance
-  - Accounting and Law
-  - Bachelor’s Project
+- **Upcoming Courses:**
+  - **Life Insurance**
+  - **Accounting and Law**
+  - **Bachelor’s Project**
 
-### Work Experience
-
-#### Sole Financial Accountant (Local Political Party) (2021 - 2022)
-- Developed and managed internal budgets for events.
-- Prepared and submitted annual financial statements.
-
-#### Private Mathematics Teacher (2023 - June 2024)
-- Provided personalized instruction to students in advanced mathematics topics.
-
-#### Academy for Talented Youths (ATU) (2020 - 2022)
-- Attended multiple lectures and produced a research paper on a selected topic.
-
-#### Bookkeeper / Finance Assistant (Biotech Startup) (Jan 2024 - Present)
-- Assumed partial bookkeeping responsibilities.
-- Performed internal financial data analysis.
-- Used renewal theory for budget modeling.
+---
 
 ### Personal Projects
 
-#### Currency Speculation (Currently)
-- Managing funds using an algorithm based on game theory principles (USD 22k under management).
-- Achieved an average ROI of 23% (2024) for three clients.
-- Developed an IBKR API Python script for statistical arbitrage.
+#### **Algorithmic Currency Trading** (Current)
+
+- **Fund Management:** Managing a portfolio of **USD 22k** using proprietary algorithms based on game theory and statistical arbitrage.
+- **High ROI Achievement:** Achieved an average ROI of **23% in 2024** for three clients, outperforming market benchmarks.
+- **Technical Implementation:** Developed advanced Python scripts interfacing with the IBKR API to execute automated trading strategies.
+
+---
+
+### Work Experience
+
+#### **Bookkeeper / Finance Assistant** (Biotech Startup) *(Jan 2024 - Present)*
+
+- **Financial Analysis:** Conducted internal financial data analysis to support strategic decision-making.
+- **Budget Modeling:** Applied renewal theory to create accurate and efficient budget models.
+- **Bookkeeping Responsibilities:** Oversaw financial records and ensured compliance with accounting standards.
+
+#### **Private Mathematics Tutor** *(2023 - June 2024)*
+
+- **Personalized Instruction:** Provided one-on-one tutoring in advanced mathematics, helping students achieve academic excellence.
+- **Curriculum Development:** Created customized lesson plans to address individual learning needs.
+
+#### **Sole Financial Accountant** (Local Political Party) *(2021 - 2022)*
+
+- **Budget Management:** Developed and managed internal budgets for events and initiatives.
+- **Financial Reporting:** Prepared and submitted annual financial statements, ensuring transparency and accountability.
+
+#### **Academy for Talented Youths (ATU)** *(2020 - 2022)*
+
+- **Advanced Learning:** Participated in specialized lectures covering a wide range of academic disciplines.
+- **Research Project:** Produced a comprehensive research paper, demonstrating strong analytical and writing skills.
+
+---
 
 ### Skills
 
-- **Languages:** Danish, English
-- **Developer Tools:**
-  - Novice-Intermediate R
-  - Novice-Intermediate Python
-  - Advanced LaTeX
-  - Novice SAS
-  - Intermediate Excel
+- **Languages:**
+  - **Danish** (Native)
+  - **English** (Fluent)
 
-### Projects
+- **Technical Proficiencies:**
+  - **Programming Languages:**
+    - **Python:** Intermediate skills with experience in data analysis and algorithm development.
+    - **R:** Intermediate proficiency in statistical computing and graphics.
+  - **Software and Tools:**
+    - **LaTeX:** Advanced ability to create professional documents and reports.
+    - **SAS:** Basic knowledge for statistical analysis.
+    - **Excel:** Intermediate expertise in spreadsheet modeling and data visualization.
 
-- [Rpubs Financial Econometrics project](https://rpubs.com/OskarAllerslev/1223102): A short project about using AR(1) processes in relation to forecasting.
-- [GitHub Repositories](https://github.com/yourusername): Explore my GitHub repositories for additional projects and code samples.
+- **Mathematical and Analytical Skills:**
+  - **Advanced Mathematics:** Strong foundation in calculus, linear algebra, and real analysis.
+  - **Statistical Modeling:** Proficient in building and interpreting statistical models.
+  - **Time Series Analysis:** Experienced in analyzing and forecasting time series data.
+  - **Financial Econometrics:** Skilled in applying econometric techniques to financial data.
+  - **Actuarial Science:** Knowledgeable in insurance mathematics and risk assessment.
 
-### Contact
+---
 
-Feel free to reach out via [email](mailto:Oskar.m1660@gmail.com)  for collaboration or opportunities.
+### Additional Information
+
+- **Eager Learner:** Constantly expanding my knowledge in finance, coding, and quantitative methods.
+- **Innovative Problem Solver:** Enjoy tackling complex challenges with creative and effective solutions.
+- **Collaborative Team Player:** Value teamwork and actively contribute to group success.
+
+---
+
+### Contact Me
+
+I'm enthusiastic about connecting with professionals and organizations interested in finance, actuarial science, data analysis, and algorithmic trading. Feel free to reach out for collaboration, opportunities, or discussions.
+
+**Email:** [Oskar.m1660@gmail.com](mailto:Oskar.m1660@gmail.com)  
+**Phone:** +45 20200679  
+**GitHub:** [github.com/OskarAllerslev](https://github.com/OskarAllerslev)
+
+---
