@@ -2,9 +2,7 @@
 title: "Forecasting FinMetrics"
 author: "Oskar Allerslev"
 date: "2024-09-21"
-output:
-  html_document: default
-  pdf_document: default
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
