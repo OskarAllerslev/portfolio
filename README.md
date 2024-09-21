@@ -1,5 +1,7 @@
 # Oskar Allerslev Christiansen
 
+![Profile Picture](./assets/face.jpg)
+
 **Location:** Copenhagen  
 **Email:** [Oskar.m1660@gmail.com](mailto:Oskar.m1660@gmail.com)  
 **Phone:** +45 20200679  
