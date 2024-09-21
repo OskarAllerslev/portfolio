@@ -12,7 +12,7 @@
 
 - <a href="https://rpubs.com/OskarAllerslev/1223102" style="color:#1E90FF;"><b>Financial Econometrics Project</b></a>: An in-depth analysis using AR(1) processes for forecasting, demonstrating advanced skills in time series analysis and statistical modeling.
 
-- <a href="https://github.com/OskarAllerslev/Python-reserve-assignment" style="color:#32CD32;"><b>Python Assignment - Markov Models in Finance</b></a>: A comprehensive university assignment implementing advanced Markov models in Python, showcasing mathematical proficiency and programming skills applied to financial contexts.
+- <a href="https://github.com/OskarAllerslev/Python-reserve-assignment" style="color:#32CD32;"><b>Python Assignment - Python reserving for Finance</b></a>: A comprehensive university assignment implementing advanced Markov models in Python, showcasing mathematical proficiency and programming skills applied to financial contexts.
 
 - <a href="https://github.com/OskarAllerslev" style="color:#FF6347;"><b>GitHub Repositories</b></a>: Explore my GitHub repositories for additional projects and code samples.
 
