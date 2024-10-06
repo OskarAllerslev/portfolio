@@ -17,7 +17,7 @@
 
 ---
 
-## 🚀 Projects
+## 🚀 Projects (Click us)
 
 - 🎓 [**Financial Econometrics Project**](https://rpubs.com/OskarAllerslev/1223102):  
   An in-depth analysis using AR(1) processes for forecasting, demonstrating advanced skills in time series analysis and statistical modeling.
