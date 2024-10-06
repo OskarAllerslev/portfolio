@@ -24,7 +24,7 @@
 
 - <a href="https://github.com/OskarAllerslev" style="color:#FF6347;"><b>GitHub Repositories</b></a>: Explore my GitHub repositories for additional projects and code samples.
 
-- <a href="https://your-shiny-app-url.shinyapps.io/" style="color:#8A2BE2;"><b>Shiny Cost Project</b></a>: An interactive Shiny application designed to visualize and analyze cost data, incorporating advanced data processing and dynamic visualizations to aid in financial decision-making.
+- <a href="https://oskarallerslev.shinyapps.io/project/" style="color:#8A2BE2;"><b>Shiny Cost Project</b></a>: An interactive Shiny application designed to visualize and analyze cost data, incorporating advanced data processing and dynamic visualizations to aid in financial decision-making.
 
 ---
 
