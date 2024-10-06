@@ -18,13 +18,13 @@
 
 ## Projects
 
-- <a href="https://rpubs.com/OskarAllerslev/1223102" style="color:#1E90FF;"><b>Financial Econometrics Project</b></a>: An in-depth analysis using AR(1) processes for forecasting, demonstrating advanced skills in time series analysis and statistical modeling.
+- [**Financial Econometrics Project**](https://rpubs.com/OskarAllerslev/1223102): An in-depth analysis using AR(1) processes for forecasting, demonstrating advanced skills in time series analysis and statistical modeling.
 
-- <a href="https://github.com/OskarAllerslev/Python-reserve-assignment" style="color:#32CD32;"><b>Python Assignment - Python Reserving for Finance</b></a>: A comprehensive university assignment implementing advanced Markov models in Python, showcasing mathematical proficiency and programming skills applied to financial contexts.
+- [**Python Assignment - Python Reserving for Finance**](https://github.com/OskarAllerslev/Python-reserve-assignment): A comprehensive university assignment implementing advanced Markov models in Python, showcasing mathematical proficiency and programming skills applied to financial contexts.
 
-- <a href="https://github.com/OskarAllerslev" style="color:#FF6347;"><b>GitHub Repositories</b></a>: Explore my GitHub repositories for additional projects and code samples.
+- [**GitHub Repositories**](https://github.com/OskarAllerslev): Explore my GitHub repositories for additional projects and code samples.
 
-- <a href="https://oskarallerslev.shinyapps.io/project/" style="color:#8A2BE2;"><b>Shiny Cost Project</b></a>: An interactive Shiny application designed to visualize and analyze cost data, incorporating advanced data processing and dynamic visualizations to aid in financial decision-making.
+- [**Shiny Cost Project**](https://oskarallerslev.shinyapps.io/project/): An interactive Shiny application designed to visualize and analyze cost data, incorporating advanced data processing and dynamic visualizations to aid in financial decision-making.
 
 ---
 
@@ -133,16 +133,3 @@ I'm enthusiastic about connecting with professionals and organizations intereste
 
 ---
 
-## How to Add Your Shiny App Project
-
-1. **Deploy Your Shiny App:**
-   - Ensure your Shiny app is successfully deployed to a hosting service like [shinyapps.io](https://www.shinyapps.io/).
-   - After deployment, you will receive a unique URL for your app.
-
-2. **Update the README:**
-   - Replace the placeholder `https://your-shiny-app-url.shinyapps.io/` in the Projects section with your actual Shiny app URL.
-
-3. **Example Update:**
-
-   ```markdown
-   - <a href="https://your-shiny-app-url.shinyapps.io/" style="color:#8A2BE2;"><b>Shiny Cost Project</b></a>: An interactive Shiny application designed to visualize and analyze cost data, incorporating advanced data processing and dynamic visualizations to aid in financial decision-making.
