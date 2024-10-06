@@ -29,7 +29,7 @@
   Explore my GitHub repositories for additional projects and code samples.
 
 - 📊 [**Shiny Cost Project**](https://oskarallerslev.shinyapps.io/project/):  
-  An interactive Shiny application designed to visualize and analyze cost data, incorporating advanced data processing and dynamic visualizations to aid in financial decision-making.
+  An interactive Shiny application designed to visualize and analyze cost data. Used for cost deep dive and cost overview in biotech company.
 
 ---
 
