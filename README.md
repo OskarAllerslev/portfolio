@@ -70,16 +70,11 @@ I am a highly motivated third-year Bachelor student at the **University of Copen
 
 ### 🛠️ Personal Projects
 
-#### **Algorithmic Currency Trading** (Current)
+### **Markov Switching model** 
+- **📈 MSM model scipt which can be set to run every day to calculate the current smoothed marginal transition probability in a two regime model and then trade an alpaca (broker) account accordingly.
 
-- **💰 Fund Management:**  
-  Managing a portfolio of **USD 22k** using proprietary algorithms based on game theory and statistical arbitrage.
-  
-- **📈 High ROI Achievement:**  
-  Achieved an average ROI of **23% in 2024** for three clients, outperforming market benchmarks.
-  
-- **🖥️ Technical Implementation:**  
-  Developed advanced Python scripts interfacing with the IBKR API to execute automated trading strategies.
+### **Learning Platform**
+- **🖥️ Partly developed an e-learning website with some asistance of Hugo Hendil, which offers gamification of the classic theory taught in gymnasiums. The repo is called CL and can be found amongst my repos.
 
 ---
 
