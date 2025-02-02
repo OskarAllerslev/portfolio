@@ -53,17 +53,15 @@ I am a highly motivated third-year Bachelor student at the **University of Copen
   - **💼 Financial and Insurance Studies:**  
     Knowledgeable in Non-life Insurance, Insurance Law, and currently studying Finance and Financial Econometric Time Series Modeling (Graduate Course).
 
-- **📅 Current Courses (Sept - Nov 2024):**
-  - **Financial Econometric Time Series Modeling (Graduate Course):**  
-    Engaging in advanced time series analysis and econometric modeling.
-  - **Regression Analysis:**  
-    Applying statistical models to predict and interpret data.
-  - **Finance:**  
-    Studying financial markets, instruments, and investment strategies.
+- **📅 Current Courses (Feb - Jun 2025):**
+  - **Bachelor's Project**
+    Application of insurance theory in both damage and life insurance.
+  - **Accounting and Law**
+    Accounting theory and insurance law. 
+  
 
 - **🔮 Upcoming Courses:**
-  - **Life Insurance**
-  - **Accounting and Law**
+  - **Interpretable Machine Learning**
   - **Bachelor’s Project**
 
 ---
@@ -80,7 +78,13 @@ I am a highly motivated third-year Bachelor student at the **University of Copen
 
 ### 💼 Work Experience
 
-#### **Bookkeeper / Finance Assistant** (Biotech Startup) *(Jan 2024 - Present)*
+### **Student worker at PFA Insuranceinsight *(Dec 2024 - Current)*
+
+- **💻 Coding:**
+  Helping manage PFA's Shiny dashboard for reporting insurance insight to clients.
+  Applying advanced coding pratices for developing and maintaining a large code structure. 
+
+#### **Bookkeeper / Finance Assistant** (Biotech Startup) *(Jan 2024 - Jan 2025)*
 
 - **📊 Financial Analysis:**  
   Conducted internal financial data analysis to support strategic decision-making.
